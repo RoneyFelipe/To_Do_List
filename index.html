@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List SPA</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" />
+        <nav>
+            <ul id="menu">
+                <li><a href="#home">Listar as tarefas</a></li>
+                <li><a href="#add">Adicionar Tarefa</a></li>
+                <li><a href="#about">Sobree o aplicativo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <section id="home" class="hidden">
+            <h1>Lista de tarefas</h1>
+            <ul id="tasks"></ul>
+        </section>
+        <section id="add" class="hidden">
+            <h1>Adicionar tarefa</h1>
+            <form id="addform">
+                <label>Descrição da Tarefa</label>
+                <input type="text" name="description">
+                <label>Observação da Tarefa</label>
+                <input type="text" name="observation">
+                <input type="submit" value="Adicionar Tarefa">
+            </form>
+        </section>
+        <section id="about" class="hidden">
+            <h1>Sobre o aplicativo</h1>
+        </section>
+    </main>
+    <script type="text/javascript" src="task.js"></script>
+    <script type="text/javascript" src="task_list.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
