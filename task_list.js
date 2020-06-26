@@ -13,7 +13,7 @@ class TaskList {
 
     notifyAll() {
         console.log("Observadores Sendo notificados");
-        for (i = 0; i < this.observers.length; i++) {
+        for (var i = 0; i < this.observers.length; i++) {
             this.observers[i]();
         }
     }
@@ -33,5 +33,17 @@ class TaskList {
     getList() {
         return this.tasks;
     }
-
+    remove(cod) {
+        alert('entreii')
+            // let position = this.tasks.filter((e) => e.id == cod);
+            // var localizationTask = this.tasks.filter(function(tasks) {
+            //     return tasks.id == cod;
+            // });
+        for (var i = 0; i < this.tasks.length; i++) {
+            if (this.tasks[i].id == cod) {
+                this.tasks.splice(i, 1)
+            }
+        }
+        this.notifyAll();
+    }
 }
