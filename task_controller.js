@@ -40,7 +40,6 @@ class TaskController {
     }
 
     buttonsCompleteActions(element) {
-        alert('Chamei')
         element.onclick = (e) => {
             this.taskList.remove(element.dataset.cod);
         }
